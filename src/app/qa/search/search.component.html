@@ -1,0 +1,10 @@
+<div fxLayout="row" fxLayoutAlign="center center">
+  <section>
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+      <mat-form-field>
+        <input type="text" matInput ngModel name="query">
+      </mat-form-field>
+      <button type="submit" mat-raised-button color="primary">Search</button>
+    </form>
+  </section>
+</div>
